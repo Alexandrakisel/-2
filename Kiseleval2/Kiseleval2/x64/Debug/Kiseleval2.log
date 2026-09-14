@@ -1,0 +1,8 @@
+﻿  Source.c
+C:\Users\student\source\repos\Kiseleval2\Source.c(7,2): warning C4013: z1: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\student\source\repos\Kiseleval2\Source.c(8,2): warning C4013: z2: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\student\source\repos\Kiseleval2\Source.c(9,2): warning C4013: z3: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\student\source\repos\Kiseleval2\Source.c(22,9): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "double"
+C:\Users\student\source\repos\Kiseleval2\Source.c(22,9): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "2" имеет тип "double"
+C:\Users\student\source\repos\Kiseleval2\Source.c(22,9): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "3" имеет тип "double"
+  Kiseleval2.vcxproj -> C:\Users\student\source\repos\Kiseleval2\x64\Debug\Kiseleval2.exe
