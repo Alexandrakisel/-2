@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include< locale.h >
+
+int z1();
+int z2();
+int z3();
+double dz();
+
+int main()
+{
+	setlocale(LC_CTYPE, "RUS");
+	z1();
+	z2();
+	z3();
+	dz();
+	return 0;
+
+}
+int z1()
+{
+	printf("1\n\t2\n\t\t3\n");
+	printf("%d\n\t%d\n\t\t%d\n\t\t\t%d", 1, 2, 3, 4);
+	printf("%10.5f\n ", 12.234657);
+	printf("Остаток от деления %d на %d равен %d\n ", 5, 2, 5 % 2);
+	printf("Остаток от деления %d на %d равен %d\n ", 7, 5, 7 % 5);
+	printf("Умножение %d на %d равно %d\n ", 2000, 4, 2000 * 4);
+	printf("%g разделить %e равно %f\n ", 5., 2000000., 5. / 2000000);
+	printf("%d разделить %d равно %d\n ", 5., 2000000., 5. / 2000000);
+	printf("%f разделить %f равно %f\n ", 5., 2000000., 5. / 2000000);
+	printf("%g разделить %g равно %g\n ", 5., 2000000., 5. / 2000000);
+	printf("%e разделить %e равно %e\n ", 5., 2000000., 5. / 2000000);
+
+	return 0;
+}
+
+int z2()
+{
+	int N = 11, K = 15, C = 37; 
+	printf("Сейчас %d часов %d минут 00 секунд\n", N,K);
+	printf("Идет %d минута суток\n",K);
+	printf("До полуночи осталось %d часов и %d минут\n", N,K);
+	printf("С 8.00 прошло %d секунд\n", C);
+	printf("Текущий час  =  %0.2f суток  и текущая минута =  %0.2f часа\n", N/24.,K/60.);
+	return 0;
+
+}
+
+int z3()
+{
+	int n = 2, m = 4, k = 2;
+	float L = 133;
+	printf("Дано: \n\t%d\n\t%f\n\t------\nОтвет:\n\t%*.*f\n", n, L, k,m,n/L);
+	return 0;
+}
+
+double dz()
+{
+ puts("Сколько километров пробежал мальчик?\n");      
+ int km=0;
+ scanf("%d\n", &km);
+ int a=4;
+ double b=3*a;
+ double res=km/b;  
+  printf("Мальчик потратил %f часа\n", res);   
+ return res;
+}
